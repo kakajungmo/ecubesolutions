@@ -25,7 +25,7 @@
 @font-face{
 	font-family:bn;
 	src:url('./font/BebasNeue-webfont.eot');
-	src:local(※), 
+	src:local(※),
 	url('./font/BebasNeue-webfont.woff') format('woff');
 }
 
@@ -83,7 +83,7 @@ section {
 .text-muted{
 	font-size:0.8rem;
 	color:#505050;
-	font-family: nsr;	
+	font-family: nsr;
 }
 
 .text-right{
@@ -120,13 +120,11 @@ section {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #FF8800;
 }
 
 #mainNav .navbar-brand {
   color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -139,7 +137,6 @@ section {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: #818181;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -165,9 +162,10 @@ section {
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
   }
+
   #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -270,7 +268,6 @@ header.slide .btn-main:hover {
 /* reasons */
 #reasons{
   background:white;
-  background-image: url("./img/section2_bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -309,7 +306,6 @@ header.slide .btn-main:hover {
 /* Products */
 #products{
 	background:white;
-  background-image: url("./img/section2_bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -409,7 +405,6 @@ header.contact .contact-form .row{
 	color:#505050;
 	text-align: left;
 	height:32rem;
-	padding:0 3rem;
 }
 
 header.contact .contact-form .row .send-message-p{
@@ -420,8 +415,9 @@ header.contact .contact-form .row .send-message-p{
 
 header.contact .contact-form .contact-left{
 	background: white;
-	padding:3rem;
+	padding:3rem !important;
 }
+
 
 header.contact .contact-form .contact-left input{
 	border: 1px solid #CFCFCF;
@@ -455,7 +451,7 @@ header.contact .contact-form .contact-right{
 header.news{
 	text-align: center;
   color: white;
-  height:21rem;
+  height:15rem;
   background-image: url("./img/news_header.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -514,8 +510,8 @@ header.news .intro-text {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	margin-bottom: -9px;
   height:29rem;
-  border:1px solid #e6e6e6;
 }
 
 #news-each-1{
@@ -529,7 +525,6 @@ header.news .intro-text {
   -o-background-size: cover;
   background-size: cover;
   height:29rem;
-  border:1px solid #e6e6e6;
 }
 
 
