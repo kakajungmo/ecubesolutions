@@ -33,7 +33,7 @@
 /* setting */
 body {
   overflow-x: hidden;
-  background:#e7e7e7;
+  background:#f5f5f5;
 }
 
 p {
@@ -80,6 +80,14 @@ section {
   font-family: nsr;
 }
 
+@media (max-width: 992px){
+	.intro-heading {
+	  font-size: 0.9rem;
+	  line-height: 1.5rem;
+	}
+}
+
+
 .text-muted{
 	font-size:0.8rem;
 	color:#505050;
@@ -123,14 +131,6 @@ section {
   background-color: #FF8800;
 }
 
-#mainNav .navbar-brand {
-  color: #fed136;
-}
-
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
-}
-
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 100;
@@ -143,10 +143,11 @@ section {
   color: white;
 }
 
+
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -174,10 +175,14 @@ section {
   }
 }
 
+.navbar-collapse {
+	margin: 1rem;
+}
+
 header.slide {
   text-align: center;
   color: white;
-  height:800px;
+  height:650px;
   background-image: url("./img/main.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -188,6 +193,13 @@ header.slide {
   background-size: cover;
 }
 
+@media (max-width: 992px) {
+	header.slide {
+  	height:450px;
+	}
+}
+
+
 header.slide .intro-text .intro-heading {
   color:white;
 }
@@ -195,6 +207,12 @@ header.slide .intro-text .intro-heading {
 header.slide .intro-text {
   padding-top: 300px;
   padding-bottom: 200px;
+}
+
+@media (max-width: 992px) {
+	header.slide .intro-text {
+	  padding-top: 150px;
+	}
 }
 
 header.slide .btn-main {
@@ -206,6 +224,12 @@ header.slide .btn-main {
   border: #ff8800 1px solid;
   border-radius: 5px;
   margin-top:2rem;
+}
+
+@media (max-width: 992px) {
+	header.slide .btn-main {
+  	line-height: 2rem;
+	}
 }
 
 header.slide .btn-main:hover {
@@ -230,7 +254,7 @@ header.slide .btn-main:hover {
 }
 
 .section-heading{
-	margin-top:100px;
+	margin-top:6rem;
 }
 
 #results .item {
@@ -280,12 +304,13 @@ header.slide .btn-main:hover {
 }
 
 #reasons .item-wrapper{
-	margin-bottom:150px;
+	margin-bottom:6rem;
 }
 
 #reasons .item-wrapper .item{
 	border:1px solid #e6e6e6;
 	border-radius: 5px;
+	margin: 1rem 0;
 }
 
 #reasons .item-wrapper .item .item-caption{
@@ -348,21 +373,27 @@ header.slide .btn-main:hover {
 
 #products .product-wrapper .product-desc .desc-title{
 	font-family:bn;
-	font-size:2.7rem;
+	font-size:2rem;
+	line-height: 3rem;
 }
 
 #products .product-wrapper .product-desc .desc-content{
 	position:absolute;
 	bottom:1rem;
-	padding:1rem;
+	padding:3rem;
 }
 
 @media (max-width: 992px) {
 	#products{
 		padding:0;
 	}
+	#products .product-wrapper .image{
+	  height:14rem;
+	}
 	#products .product-wrapper .product-desc .desc-content{
 		position:relative;
+		padding: 1rem;
+		padding-top: 3rem;
 	}
 	footer ul{
 		display:none;
@@ -415,8 +446,15 @@ header.contact .contact-form .row .send-message-p{
 
 header.contact .contact-form .contact-left{
 	background: white;
-	padding:3rem !important;
+	padding:3rem;
 }
+
+@media (max-width: 992px) {
+	header.contact .contact-form .contact-left{
+		padding:1.5rem;
+	}
+}
+
 
 
 header.contact .contact-form .contact-left input{
@@ -463,7 +501,7 @@ header.news{
 }
 
 header.news .intro-text {
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .news-wrapper{
@@ -472,12 +510,13 @@ header.news .intro-text {
 }
 
 .news-wrapper .news-content{
-	margin-top:5rem;
+	margin-top:3rem;
+	padding: 1rem;
 	font-family: nsr;
 }
 
 .news-wrapper .news-content h1{
-	font-size:5rem;
+	font-size:4rem;
 	font-family: bn;
 }
 
