@@ -48,6 +48,19 @@ section {
   margin:10px 0;
 }
 
+.mobile{
+	display:none;
+}
+
+@media (max-width: 992px) {
+	.web{
+		display:none;
+	}
+	.mobile{
+		display:block;
+	}
+}
+
 
 /* shared! */
 .intro-lead-in{
@@ -346,6 +359,18 @@ header.slide .btn-main:hover {
 	position:absolute;
 	bottom:1rem;
 	padding:1rem;
+}
+
+@media (max-width: 992px) {
+	#products{
+		padding:0;
+	}
+	#products .product-wrapper .product-desc .desc-content{
+		position:relative;
+	}
+	footer ul{
+		display:none;
+	}
 }
 
 #products .product-wrapper .product-desc .desc-content .text-muted{
